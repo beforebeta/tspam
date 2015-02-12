@@ -90,6 +90,11 @@ class SpamPostAdmin(admin.ModelAdmin):
 admin.site.register(SpamConfig, SpamConfigAdmin)
 
 admin.site.register(SystemConfig)
-admin.site.register(SpamScan)
+
+
+class SpamScanAdmin(admin.ModelAdmin):
+    list_display = ('config', 'started', "ended")
+
+admin.site.register(SpamScan, SpamScanAdmin)
 admin.site.register(SpamPost, SpamPostAdmin)
 
