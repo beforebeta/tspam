@@ -61,6 +61,14 @@ TEMPLATE_DIRS = (
     "templates",
 )
 
+# TEMPLATE_LOADERS = (
+#     "django.template.loaders.filesystem.Loader",
+# )
+#
+# TEMPLATE_DIRS = (
+#     "",
+# )
+
 WSGI_APPLICATION = 'tspam.wsgi.application'
 
 

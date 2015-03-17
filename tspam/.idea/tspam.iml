@@ -11,7 +11,11 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
+<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="Python 2.7.8 virtualenv at ~/Dropbox/workspace/env/tspam" jdkType="Python SDK" />
+=======
+    <orderEntry type="inheritedJdk" />
+>>>>>>> 66b7a25963f7170e348f100a6277a933f70d31c4
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">

@@ -11,7 +11,6 @@ urlpatterns = patterns('',
     url(r'^inspiration/$', view="inspiration.views.home"),
     url(r'^plant/(?P<plant_id>[0-9]+)/$', view="inspiration.views.plant_popup"),
     url(r'^admin/', include(admin.site.urls)),
-
 )
 
 admin.site.site_header = 'Taunton Spam Scanner'
