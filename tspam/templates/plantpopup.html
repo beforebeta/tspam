@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <style>
+        body{
+            font-family: "HelveticaNeueLT","HelveticaNeueLTStd","Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        .left {
+            float:left;
+            width:300px;
+            overflow:hidden;
+        }
+        .plant-image{
+            max-width:300px;
+            max-height:270px;
+        }
+        .right {
+            float:left;
+            width:300px;
+            font-size:13px;
+        }
+        .right div {
+            margin-bottom:10px;
+        }
+        .title h1 {
+            font-size:20px;
+            margin-top:5px;
+        }
+        .link a {
+            float:left;
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <img src="{{ product.image_url }}" class="plant-image">
+    </div>
+    <div class="right">
+        <div class="title">
+            <h1>{{ product.name }}</h1>
+        </div>
+        <div class="description">
+            {{ product.description }}
+        </div>
+        <div class="link">
+            <a href="{{ product.source_url }}" target="_blank">See More</a>
+            <script type="text/javascript">
+                  var ord = window.ord || Math.floor(Math.random() * 1e16);
+                  document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N6134/adj/ttn.fg/backyard_makeover;sz=156x110;ord=' + ord + '?"><\/script>');
+                </script>
+        </div>
+    </div>
+</body>
+</html>

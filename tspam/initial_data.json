@@ -1,0 +1,9 @@
+[
+  {
+    "model": "web",
+    "pk": 1,
+    "fields": {
+      "stopwords_list": "blah"
+    }
+  }
+]
