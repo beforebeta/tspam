@@ -157,6 +157,9 @@ class SpamPost(Timestamps):
             except:
                 pass
                 # print_stack_trace()
+        if len(self.post_title) > 255:
+            self.post_text = "%s\n%s" % (self.post_title, self.post_text)
+            self.post_title = self.post_title[:255]
         super(SpamPost, self).save(*args, **kw)
 
     def ignore(self):
