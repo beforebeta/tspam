@@ -68,7 +68,11 @@ def _scan_page(page, base_url, config, auth_session, title_scan_list, content_sc
         post.post_user = tds[7].text.lower().strip()
         post.post_user_edit = tds[7].find_all("a")[0]["href"]
         if SpamPost.objects.filter(post_id=post.post_id).count() == 0:
-            post.save()
+            try:
+                post.save()
+            except:
+                post.post_text = ""
+                post.save()
             scan.add_log("identified %s for deletion" % tds[1].text)
 
     for post in posts:
