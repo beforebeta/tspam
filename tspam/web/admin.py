@@ -84,7 +84,7 @@ delete_spam.short_description = "Confirm as Spam and Delete from Website"
 class SpamPostAdmin(admin.ModelAdmin):
     readonly_fields = ('created', 'modified',)
     list_display = ('config', 'post_id', 'post_title', "post_user", "title_scan_hits", "content_scan_hits", "status")
-    search_fields = ["config__website", 'post_id', 'post_title', "title_scan_hits", "content_scan_hits", "post_user"]
+    search_fields = ["config__website", 'post_id', 'post_title', "title_scan_hits", "content_scan_hits", "post_user", "status"]
     actions = [delete_spam, ignore_spam]
 
 admin.site.register(SpamConfig, SpamConfigAdmin)
